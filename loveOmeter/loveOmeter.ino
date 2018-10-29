@@ -23,7 +23,6 @@ void loop() {
   // because I live in the US, convert to Fahrenheit
   temperature = (((voltage - 0.5)*100)*1.8)+32;  
   
-  
   Serial.print("\nSensor Value: ");
   Serial.print(sensorVal);
   Serial.print(" Voltage: ");
@@ -48,6 +47,7 @@ void loop() {
     digitalWrite(3, HIGH);
     digitalWrite(4, HIGH);
   }
-
+  \\Sensor takes a while to come back to normal.
+  
   delay(10);
 }
